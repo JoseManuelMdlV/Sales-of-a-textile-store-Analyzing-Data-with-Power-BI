@@ -30,12 +30,13 @@ Para poder hacer los arreglos previos necesarios, haremos click en el botón “
 En la figura 3 se puede ver cómo modificar la columna “precio” para que pase de ser una columna de datos de tipo número entero, a una columna de datos de tipo número decimal fijo, siendo necesario dividir todos los valores por un factor 100 para obtener los valores reales. 
 
 ![image](https://github.com/user-attachments/assets/2ea576b5-adde-4332-b1f2-7ded2e093f5e)
+![image](https://github.com/user-attachments/assets/2264a1c6-623d-49ec-ac74-ed33162e22fc)
 
 <b>Figura 3:</b> Transofrmación de datos con Power Query.
 
 El último paso, que puede verse en la figura 4, convierte la columna precio a un formato de moneda, pudiendo también seleccionar la moneda con la que va a trabajar el comercio.
 
-![image](https://github.com/user-attachments/assets/2264a1c6-623d-49ec-ac74-ed33162e22fc)
+![image](https://github.com/user-attachments/assets/b06aa3f2-ed0d-4346-b314-04bed268da0e)
 
 <b>Figura 4:</b> Retoques finales.
 
