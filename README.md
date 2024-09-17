@@ -44,21 +44,29 @@ Ahora que tenemos los datos importados, se tiene que dejar claro qué se quiere 
 
 Si miramos las columnas de la tabla en la figura 4, vemos que no tenemos lo que se ha ingresado por el total de los artículos, algo que acabamos de declarar como un dato de interés. Como esta columna no se ha proporcionado, voy a crearla insitu. Para ello hago click en “Nueva columna”, selecciono la nueva columna que se ha creado y escribo la sentencia “Ingreso = ventas_articulos_actualizado[precio]*ventas_articulos_actualizado[cantidad]”, obteniendo como salida el total ingresado por la venta de ese día, tal y como puede verse en la figura 5.
 
-Figura 5 aquí
+![image](https://github.com/user-attachments/assets/6d592ca0-b032-47f8-b035-25e9a41948de)
+
+<b>Figura 5:</b> Creación de nuevas columnas con el propio lengaje de Power BI.
 
 Ahora que tengo todo lo necesario, voy a crear un pequeño dashboard, el de la figura 6, donde presente dos gráficos de barras donde muestre el total de las ventas realizadas cada mes y el total del dinero ingresado por dicho total de ventas. También añado dos gráficos de tipo disco para que se pueda ver el porcentaje de artículos vendidos de cada tipo para cada mes. Por último, añado una serie de botones que funcionarán como filtro para poder enfocarse en un mes o serie de meses concretos.
 
-Figura 6 aquí
+![image](https://github.com/user-attachments/assets/9c1944be-4fc1-4ef0-b17d-9e58bb9643c0)
+
+<b>Figura 6:</b> Dashboard que muestra de forma gráfica los datos de la tabla importada.
 
 Ya con lo que tenemos aquí es posible extraer algunas conclusiones que pueden saltar a simple vista, pero esto lo dejaremos para el final. Ahora vamos a centrarnos en el aporte que ha tenido cada artículo a la caja del comercio.
 
 Para crear la comparativa de lo que ha aportado cada artículo, se va a crear una tabla nueva empleando la función DAX SUMMARIZE, la cual nos permitirá extraer una serie de columnas de otras tablas que tengamos y agrupar los datos en acuerdo al contenido de dichas columnas y por último usaremos la instrucción SUM para obtener el total de artículos vendidos de un mismo tipo a lo largo del mes, así como los ingresos obtenidos de dichas ventas. La tabla obtenida como resultado, así como el código empleado para su confección, pueden apreciarse en la figura 7.
 
-Figura 7 aquí.
+![image](https://github.com/user-attachments/assets/6d50c4de-cda6-4e82-b271-bc9dbc984d01)
+
+<b>Figura 7:</b> Uso de funciones DAX para crear una nueva tabla.
 
 En la figura 8 podemos ver el dashboard con los gráficos, los valores promedio de los artículos vendidos y los ingresos obtenidos en promedio por cada artículo y los botones que funcionan a modo de filtro donde se aprecia la evolución mes a mes de las ventas de cada tipo de artículo y lo que ello ha supuesto para los ingresos del comercio, pudiéndose apreciar un aumento de las ventas de edredones en el último cuatrimestre del año y una ausencia de ventas de este mismo artículo en los meses de verano, lo cual es consistente con lo que le habíamos pedido a la IA. 
 
-Figura 8 aquí
+![image](https://github.com/user-attachments/assets/3e12e02e-f517-4219-a3d9-08687d31306d)
+
+<b>Figura 8:</b> Dashboard en el que se muestra la aportación de cada artículo a las ventas del comercio
 
 De aquí pueden extraerse algunas conclusiones que podrían resultar interesantes. 
 
