@@ -13,23 +13,31 @@ En un proyecto anterior ya hemos visto cómo podemos usar la GenAI para crear ba
 
 Power BI nos permite importar tablas de distintas fuentes, siendo esta una de las propiedades más importantes de esta herramienta. Entre todas estas fuentes, está la importación de archivos CSV, como podemos ver en la figura 1, que también poseen otras herramientas del ecosistema Office de Microsoft, como lo es Excel.
 
-Figura 1 aquí.
+![image](https://github.com/user-attachments/assets/98a682d8-4eb0-4fdb-8060-d328cc725460)
+
+<b>Figura 1:</b> Proceso para importar datos a Power BI.
 
 Para poder importar los datos basta con ir al menú situado en la parte superior de la ventana y, al clickar en “Obtener datos”, vemos que se nos abre un menú desplegable. De entre las opciones que aparecen de manera inmediata en dicho desplegable podemos ver la opción “Texto o CSV”, como ya hemos visto en la figura 1.
 
 Al importar los datos, se nos abrirá una ventana, la de la figura 2, donde veremos la estructura de la tabla y los datos contenidos en esta. Como ya dije en el proyecto donde genero la tabla con Postgres, los datos no se importan correctamente al haber conflictos con los separadores decimales, lo que da como resultado que los precios de los artículos se vean modificados de forma que no nos van a ser útiles. 
 
-Figura 2 aquí.
+![image](https://github.com/user-attachments/assets/4dd5ea97-d8ef-48bc-923d-196c30914065)
+
+<b>Figura 2:</b> Vista previa de la tabla importada.
 
 Para poder hacer los arreglos previos necesarios, haremos click en el botón “Transformar datos”, que se sitúa en la parte inferior de la ventana que se nos ha abierto. Con ello, se nos abre el editor de Power Qwery, una herramienta que ya se poseía con Excel que nos permite trabajar con nuestros datos para poder prepararlos para su posterior visualización y análisis.
 
 En la figura 3 se puede ver cómo modificar la columna “precio” para que pase de ser una columna de datos de tipo número entero, a una columna de datos de tipo número decimal fijo, siendo necesario dividir todos los valores por un factor 100 para obtener los valores reales. 
 
-Figura 3 aquí.  
+![image](https://github.com/user-attachments/assets/2ea576b5-adde-4332-b1f2-7ded2e093f5e)
+
+<b>Figura 3:</b> Transofrmación de datos con Power Query.
 
 El último paso, que puede verse en la figura 4, convierte la columna precio a un formato de moneda, pudiendo también seleccionar la moneda con la que va a trabajar el comercio.
 
-Figura 4 aquí.
+![image](https://github.com/user-attachments/assets/2264a1c6-623d-49ec-ac74-ed33162e22fc)
+
+<b>Figura 4:</b> Retoques finales.
 
 Ahora que tenemos los datos importados, se tiene que dejar claro qué se quiere ver y qué datos nos sirven para nuestro análisis y cuáles no nos lo son. Para este proyecto, nos vamos a enfocar en el número de ventas por mes, los ingresos obtenidos por esas ventas y en los artículos de cada tipo que se han vendido y los ingresos que nos han aportado.
 
